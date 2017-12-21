@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>{% block title %}{% endblock %}</title>
+    <title> 蒙牛官网 </title>
     <link rel="icon" href="../images/icon.png">
-    <link rel="stylesheet" href="../less/layout.css"> {% block head %}{% endblock %}
+    <link rel="stylesheet" href="../less/layout.css"> <link rel="stylesheet" href="../less/about.css">
 </head>
 
 <body>
@@ -73,9 +73,12 @@
             </ul>
         </div>
     </div>
-    {% block content %}{% endblock %}
+    
+<!-- 提供页面信息，页面名称及页面导航背景色 -->
+<h1 id="pageInfor" style="display:none;background-color:#f39e38">关于蒙牛</h1>
+
     <script src="../js/jquery-3.2.1.min.js"></script>
-    {% block script %}{% endblock %}
+    <script src="../js/about.js"></script> 
     <script src="../js/navBar.js"></script>
 </body>
 

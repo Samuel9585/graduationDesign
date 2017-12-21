@@ -1,6 +1,7 @@
 {% extends './layout.html' %} {% block title %}蒙牛--以消费者为中心，成为创新引领的百年营养健康食品公司{% endblock %} {% block head %}
 <link rel="stylesheet" href="../less/index.css"> {% endblock %} {% block content %}
 <!-- 主题部分 -->
+<h1 id="pageInfor" style="display:none;background-color:#339b39;">蒙牛首页</h1>
 <div class="banner_wrap ">
 
     <!-- 背景图片滚动窗口 -->
@@ -170,11 +171,11 @@
 
     <!-- 滚动点 -->
     <div class="scroll_page">
-        <span class="page_0"></span>
-        <span class="page_1"></span>
-        <span class="page_2"></span>
-        <span class="page_3"></span>
-        <span class="page_4"></span>
+        <span class="page_0" index="0"></span>
+        <span class="page_1" index="1"></span>
+        <span class="page_2" index="2"></span>
+        <span class="page_3" index="3"></span>
+        <span class="page_4" index="4"></span>
     </div>
 </div>
 {% endblock %} {% block script %}

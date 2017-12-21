@@ -55,7 +55,6 @@ a{
         >li{
             height: 5.9375rem;
             margin-top: -1px;
-            margin-bottom: 1px;
             >a{
                 display: block;
                 box-sizing: border-box;
@@ -67,8 +66,6 @@ a{
                 border: 1px solid transparent;
                 border-left: none;
                 border-right: none;
-                
-                margin-top: -1px;
                 span.nav_pic{
                     display: block;
                     width: 2.5rem;
@@ -91,7 +88,7 @@ a{
                      position: absolute;
                      left: .9375rem;
                      right: .9375rem;
-                     bottom:-2px;
+                     bottom:-1px;
                      border-bottom: 1px solid #898a87;
                      height: 0;
                      overflow: hidden;
@@ -150,9 +147,7 @@ a{
             }
         }
         .nav_home {
-            margin-bottom:2px;
             >a{
-                margin-top: 0;
                 border-top: 1px solid transparent !important;
             }
             &:hover{
@@ -177,7 +172,6 @@ a{
             }
         }
         .nav_about {
-            margin-top: -3px;
             
             &:hover{
                 .sub{
@@ -331,12 +325,81 @@ a{
         }
     }
     .nav_pic{
-        background-position:-45px 0 !important;
+        background-position:-90px 0 !important;
     }
     .nav_word{
         background-position: 50% -73px !important;
     }
 }
+.active_about{
+    background-color: rgba(255, 255, 255, 1);
+    >a{
+        z-index: 200;
+        border-color: rgb(243, 158, 56) !important;
+        em{
+            border-color: transparent;
+            display: none !important;
+        }
+    }
+    .nav_pic{
+        background-position:-90px -60px !important;
+    }
+    .nav_word{
+        background-position: 50% -87px !important;
+    }
+}
+.active_product{
+    background-color: rgba(255, 255, 255, 1);
+    >a{
+        z-index: 200;
+        border-color: rgb(235, 107, 100) !important;
+        em{
+            border-color: transparent;
+            display: none !important;
+        }
+    }
+    .nav_pic{
+        background-position:-90px -120px !important;
+    }
+    .nav_word{
+        background-position: 50% -102px !important;
+    }
+}
+.active_duty{
+    background-color: rgba(255, 255, 255, 1);
+    >a{
+        z-index: 200;
+        border-color: rgb(113, 189, 228) !important;
+        em{
+            border-color: transparent;
+            display: none !important;
+        }
+    }
+    .nav_pic{
+        background-position:-90px -180px !important;
+    }
+    .nav_word{
+        background-position: 50% -117px !important;
+    }
+}
+.active_news{
+    background-color: rgba(255, 255, 255, 1);
+    >a{
+        z-index: 200;
+        border-color: rgb(38, 161, 58) !important;
+        em{
+            border-color: transparent;
+            display: none !important;
+        }
+    }
+    .nav_pic{
+        background-position:-90px -240px !important;
+    }
+    .nav_word{
+        background-position: 50% -132px !important;
+    }
+}
+
 
 @media only screen and (max-height: 700px){
     .main_nav{
