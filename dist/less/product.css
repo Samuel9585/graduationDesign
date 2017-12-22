@@ -1,0 +1,290 @@
+.page_wrap {
+  height: 100%;
+  overflow: hidden;
+  min-width: 40.625rem;
+  position: relative;
+}
+.page_wrap .mask_bg_wrap {
+  position: relative;
+  height: 100%;
+  background: none 50% 0 no-repeat;
+  overflow: hidden;
+  background-image: url(../images/product/product_bg.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.page_wrap .mask_bg_wrap .mask_bg {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.page_wrap .mask_bg_wrap .mask_bg > .mask {
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  left: -10px;
+  right: 3%;
+  -webkit-mask-image: url(../images/product/mask_image.svg);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: top right;
+  -webkit-mask-size: auto 100%;
+}
+.page_wrap .mask_bg_wrap .mask_bg > .mask .maskPic {
+  position: relative;
+  height: 100%;
+  background: none 50% 0 no-repeat;
+  overflow: hidden;
+  transition: transform .6s ease;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  background-size: auto 100%;
+  background-position: 100% 50%;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+.page_wrap .mask_bg_wrap .mask_bg > .mask .mask_border {
+  position: absolute;
+  left: 0;
+  right: -1px;
+  top: 0;
+  bottom: 0;
+  background: url(../images/product/maskBorder.svg) 100% 0 no-repeat;
+  background-size: auto 100%;
+}
+.page_wrap .mask_bg_wrap .mask_bg > .mask .maskPic_1 {
+  background-image: url(../images/product/maskPic.jpg);
+}
+.page_wrap .mask_bg_wrap .mask_bg > .mask_2 {
+  right: 44.4%;
+}
+.page_wrap .mask_bg_wrap .mask_bg > .mask_2 .maskPic_2 {
+  background-image: url(../images/product/maskPic2.jpg);
+}
+.water_title_wrap {
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  left: -10px;
+  right: 3%;
+  transform: translate3D(0, 0, 0);
+  -webkit-transform: translate3D(0, 0, 0);
+  z-index: 10;
+  min-height: 21.875rem;
+}
+.water_title_wrap.water_title_wrap_2 {
+  right: 44.4%;
+}
+.water_title_wrap > a:hover > span {
+  background-color: #fff;
+  color: #eb6b64;
+}
+.water_title_wrap > a {
+  position: absolute;
+  width: 178px;
+  height: 252px;
+  margin-right: -90px;
+  bottom: 8%;
+  right: 23.6%;
+  text-align: center;
+  color: #fff;
+}
+.water_title_wrap > a i {
+  margin-top: 101px;
+  visibility: hidden;
+  display: block;
+  width: 11px;
+  height: 16px;
+  margin: 90px auto 18px;
+  position: relative;
+  z-index: 1;
+}
+.water_title_wrap > a em {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../images/product/waterTitle.svg) 50% 0 no-repeat;
+  background-size: 100%;
+  opacity: .75;
+  transition: transform .6s ease;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transform: scale(1.17);
+  transform-origin: 50% 90%;
+  -webkit-transform: scale(1.17);
+  -webkit-transform-origin: 50% 90%;
+}
+.water_title_wrap > a b {
+  display: block;
+  position: relative;
+  text-indent: -100rem;
+  height: 1.875rem;
+  overflow: hidden;
+  background: url(../images/product/waterWord.png) 50% 0 no-repeat;
+}
+.water_title_wrap > a span {
+  display: block;
+  width: 109px;
+  height: 30px;
+  line-height: 1.875rem;
+  color: #fff;
+  font-size: .85em;
+  margin: 17px auto 45px;
+  position: relative;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  line-height: 28px;
+  transition: background .3s,color .3s;
+  -webkit-transition: background .3s,color .3s;
+}
+.water_title_wrap.water_title_wrap_2 > a {
+  right: 46%;
+}
+.water_title_wrap.water_title_wrap_2 > a > em {
+  background-image: url(../images/product/waterTitle2.svg);
+}
+.water_title_wrap.water_title_wrap_2 > a > b {
+  background-position: 50% 100%;
+}
+.water_title_wrap.water_title_wrap_2 > a:hover > span {
+  color: #f39e38;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  overflow: visible;
+  width: auto;
+}
+.footer .footer_inner {
+  display: block;
+  margin-left: 93px;
+  position: relative;
+  color: #b5b5b6;
+}
+.footer .footer_inner .social {
+  padding: 61px 0 32px;
+  font-size: .85em;
+  text-align: center;
+}
+.footer .footer_inner .social a {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  text-align: center;
+}
+.footer .footer_inner .social a:hover i {
+  background-position: 0 -54px;
+}
+.footer .footer_inner .social a i {
+  display: block;
+  margin: 0 auto .9375rem;
+  width: 3.375rem;
+  height: 3.375rem;
+  background: url(../images/social.png) 0 0 no-repeat;
+  background-size: 108px;
+}
+.footer .footer_inner .social > span {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+.footer .footer_inner .social > span:hover i {
+  background-position: -54px -54px;
+}
+.footer .footer_inner .social > span:hover .weixin_wrap {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+.footer .footer_inner .social > span i {
+  display: block;
+  margin: 0 auto .9375rem;
+  width: 3.375rem;
+  height: 3.375rem;
+  background: url(../images/social.png) -54px 0 no-repeat;
+  background-size: 108px;
+}
+.footer .footer_inner .social > span .weixin_wrap {
+  display: block;
+  position: absolute;
+  right: -150px;
+  top: -40px;
+  background-color: #fff;
+  border-radius: .3125rem;
+  color: #00a63c;
+  padding: .3125rem;
+  text-align: center;
+  z-index: 100;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+}
+.footer .footer_inner .social > span .weixin_wrap > em {
+  display: block;
+  position: absolute;
+  left: -19px;
+  top: 50%;
+  border: .625rem solid transparent;
+  border-right-color: #fff;
+  margin-top: -1.25rem;
+}
+.footer .footer_inner .social > span .weixin_wrap .weixin {
+  display: block;
+  height: 7.5rem;
+  width: 7.5rem;
+  background: url(../images/weixin.png) 0 0 no-repeat;
+  margin-bottom: .1875rem;
+}
+.footer .footer_inner .copyright {
+  padding: 0 2em 5.375rem;
+  line-height: 1.8;
+  text-align: center;
+  font-size: .85em;
+}
+.footer .footer_inner .copyright .line {
+  display: inline-block;
+}
+.footer .footer_inner .copyright .line a:hover {
+  color: #fff;
+}
+.footer .footer_inner .copyright .beian {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url(../images/beian.png) 0 0 no-repeat;
+  background-size: 100%;
+  margin-right: .3125rem;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+.footerWrap {
+  width: auto;
+  max-width: none;
+  background: url(../images/about/footerBg.jpg) 50% 50% no-repeat;
+  background-color: #ffffff;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  color: #b5b5b6;
+  overflow: visible;
+}
+.water_title_wrap:hover em {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+.hover > .maskPic {
+  transform: scale(1.15) !important;
+  -webkit-transform: scale(1.15) !important;
+}
