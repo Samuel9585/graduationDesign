@@ -45,7 +45,6 @@
   -webkit-transform: translate3D(0, 0, 0);
   transition: transform .3s ease;
   -webkit-transition: -webkit-transform 0.3s ease;
-  box-shadow: -2px 0 100px #999;
 }
 .page_wrap > .content_area > .image_wrap .water {
   display: block;

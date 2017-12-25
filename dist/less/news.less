@@ -1,0 +1,353 @@
+.page_wrap{
+    display: block;
+    height: 100%;
+    min-height: 700px;
+    min-width: 650px;
+    position: relative;
+    font-size: .85em;
+    color: #333;
+    .news_banner{
+        height: 100%;
+        .news_banner_item{
+            height: 33.33%;
+            position: relative;
+            overflow: hidden;
+            .img_wrap{
+                overflow: hidden;
+                background-position: 50% 53%;
+                background-size: cover;
+                transition: transform .6s ease;
+                -webkit-transition: -webkit-transform .6s ease;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                
+            }
+            .content_area{
+                margin-left: 93px;
+                height: 100%;
+                position: relative;
+                
+                .news_text{
+                    display: block;
+                    position: absolute;
+                    top: 46%;
+                    height: 61px;
+                    margin-top: -30px;
+                    width: 217px;
+                    background: none 0 0 no-repeat;
+                    background-size: 100%;
+                }
+                .news_text_1{
+                    right: 9.6%;
+                    background-image: url(../images/news/text1.png);
+                }
+                .news_text_2{
+                    width: 235px;
+                    right: auto;
+                    left: 4%;
+                    margin-top: -40px;
+                    background-image: url(../images/news/text2.png);
+                }
+                .news_text_3{
+                    width: 260px;
+                    right: 4.7%;
+                    margin-top: -36px;
+                    background-image: url(../images/news/text3.png);
+                }
+                .water_title_wrap{
+                    position: absolute;
+                    width: 172px;
+                    height: 245px;
+                    bottom: 10px;
+                    display: block;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: transform .6s ease;
+                    -webkit-transition: -webkit-transform .6s ease;
+                    transform: translate3D(0,-29%,0);
+                    -webkit-transform: translate3D(0,-29%,0);
+                    z-index: 400;
+                    cursor: pointer;
+                    i{
+                        background-size: 100%;
+                        display: block;
+                        width: 11px;
+                        height: 16px;
+                        margin: 90px auto 18px;
+                        position: relative;
+                        z-index: 1;
+                        background: url(../images/news/whiteWater.png) 50% 0 no-repeat;
+                    }
+                    em{
+                        background: url(../images/news/water1.svg) 50% 0 no-repeat;
+                        transition: transform .6s ease;
+                        transform: scale(2.29);
+                        transform-origin: 50% 93%;
+                        -webkit-transition: -webkit-transform .6s ease;
+                        -webkit-transform: scale(2.29);
+                        -webkit-transform-origin: 50% 93%;
+                        opacity: .75;
+                        background-size: 100%;
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        z-index: -100;
+                    }
+                    b{
+                        display: block;
+                        text-indent: -1000em;
+                        height: 30px;
+                        overflow: hidden;
+                        background: url(../images/news/title1.png) 50% 0 no-repeat;
+                        background-size: auto 300%;
+                        z-index: 200;
+                    }
+                    span{
+                        display: block;
+                        background: transparent;
+                        border: 2px solid #fff;
+                        border-radius: 15px;
+                        box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        line-height: 28px;
+                        transition: background .3s,color .3s;
+                        -webkit-transition: background .3s,color .3s;
+                        width: 109px;
+                        height: 30px;
+                        color: #fff;
+                        margin: 17px auto 45px;
+                        position: relative;
+                    }
+                }
+                .water_title_wrap_1{
+                    left: 13.35%;
+                }
+            }
+
+            .img_wrap_1{
+                background-image: url(../images/news/bg1.jpg);
+            }
+            .img_wrap_2{
+                background-image: url(../images/news/bg2.jpg);
+            }
+            .img_wrap_3{
+                background-image: url(../images/news/bg3.jpg);
+            }
+        }
+    }
+}
+.news_banner_item:hover{
+    >.img_wrap{
+        transform: scale(1.07);
+        -webkit-transform: scale(1.07);
+    }
+    .water_title_wrap{
+        transform: translate3d(0,0,0) !important;
+        -webkit-transform: translate3d(0,0,0) !important;
+        >em{
+            transform: scale(1) !important;
+            -webkit-transform: scale(1) !important;
+        }
+    }
+}
+.water_title_wrap_2{
+    transform: translate3D(0,-18.7%,0) !important;
+    -webkit-transform: translate3D(0,-18.7%,0) !important;
+    right: 11.5% !important;
+    width: 198px !important;
+    height: 283px !important;
+    em{
+        background-image:url(../images/news/water2.svg) !important;
+        transform-origin: 50% 74% !important;
+        transform: scale(1.66);
+        -webkit-transform: scale(1.66) !important;
+        -webkit-transform-origin: 50% 74% !important;
+        opacity: .7 !important;
+    }
+    b{
+        background-position: 50% 50% !important;
+    }
+}
+.water_title_wrap_3{
+    transform: translate3D(0,-16%,0) !important;
+    -webkit-transform: translate3D(0,-16%,0) !important;
+    left: 12.4% !important;
+    em{
+        background-image:url(../images/news/water3.svg) !important;
+        transform-origin: 50% 60% !important;
+        transform: scale(1.23);
+        -webkit-transform: scale(1.23) !important;
+        -webkit-transform-origin: 50% 60% !important;
+        opacity: .7 !important;
+    }
+    b{
+        background-position: 50% 100% !important;
+    }
+}
+
+.water_title_wrap:hover{
+    >span{
+        background-color: #fff !important;
+    }
+}
+.water_title_wrap_1:hover{
+    >span{
+        background-color: #fff !important;
+        color: rgb(235, 107, 100) !important;
+    }
+}
+.water_title_wrap_2:hover{
+    >span{
+        background-color: #fff !important;
+        color: rgb(113, 189, 228) !important;
+    }
+}
+.water_title_wrap_3:hover{
+    >span{
+        background-color: #fff !important;
+        color: rgb(243, 158, 56) !important;
+    }
+}
+
+
+
+.footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    overflow: visible;
+    width: auto;
+    .footer_inner{
+        display: block;
+        margin-left: 93px;
+        position: relative;
+        color: #b5b5b6;
+        .social{
+            padding: 61px 0 32px;
+            font-size:.85em;
+            text-align: center;
+            a{
+                &:hover{
+                    i{
+                        background-position: 0 -54px;
+                    }
+                }
+                display: inline-block;
+                position: relative;
+                margin-right: 20px;
+                text-align: center;
+                i{
+                    display: block;
+                    margin: 0 auto .9375rem;
+                    width: 3.375rem;
+                    height: 3.375rem;
+                    background:url(../images/social.png) 0 0 no-repeat;
+                    background-size: 108px;
+                }
+            }
+            >span{
+                position: relative;
+                display: inline-block;
+                text-align: center;
+                cursor: pointer;
+                &:hover{
+                    i{
+                        background-position: -54px -54px;
+                    }
+                    .weixin_wrap{
+                        transform: scale(1);
+                        -webkit-transform: scale(1);
+                    }
+                }
+                i{
+                    display: block;
+                    margin: 0 auto .9375rem;
+                    width: 3.375rem;
+                    height: 3.375rem;
+                    background:url(../images/social.png) -54px 0 no-repeat;
+                    background-size: 108px;
+                }
+                .weixin_wrap{
+                    display: block;
+                    position: absolute;
+                    right: -150px;
+                    top: -40px;
+                    background-color:#fff;
+                    border-radius: .3125rem;
+                    color: #00a63c;
+                    padding: .3125rem;
+                    text-align: center;
+                    z-index: 100;
+                    transition: all .2s;
+                    -webkit-transition: all .2s;
+                    transform: scale(0);
+                    -webkit-transform: scale(0);
+                    -webkit-transform-origin: 0 50%;
+                    transform-origin: 0 50%;
+                    >em{
+                        display: block;
+                        position: absolute;
+                        left: -19px;
+                        top: 50%;
+                        border: .625rem solid transparent;
+                        border-right-color:#fff;
+                        margin-top: -1.25rem;
+                    }
+                    .weixin{
+                        display: block;
+                        height: 7.5rem;
+                        width: 7.5rem;
+                        background: url(../images/weixin.png) 0 0 no-repeat;
+                        margin-bottom: .1875rem;
+                    }
+                }
+            }
+        }
+        .copyright{
+            padding: 0 2em 5.375rem;
+            line-height: 1.8;
+            text-align: center;
+            font-size: .85em;
+            .line{
+                display: inline-block;
+                a{
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+            .beian{
+                display: inline-block;
+                width: 1.25rem;
+                height: 1.25rem;
+                background: url(../images/beian.png) 0 0 no-repeat;
+                background-size: 100%;
+                margin-right: .3125rem;
+                vertical-align: middle;
+                position: relative;
+                top: -2px;
+                
+            }
+        }
+
+    }
+}
+.footerWrap{
+    width: auto;
+    max-width: none;
+    background:url(../images/about/footerBg.jpg) 50% 50% no-repeat;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    color: #b5b5b6;
+    overflow: visible;
+}
