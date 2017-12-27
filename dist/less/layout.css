@@ -378,22 +378,6 @@ a {
   .main_nav > li {
     height: 7.1875rem !important;
   }
-  .main_nav > li .nav_pic {
-    margin-top: .9375rem !important;
-    margin-bottom: .625rem !important;
-  }
-  .main_nav > li.nav_about .about {
-    top: 12rem !important;
-  }
-  .main_nav > li.nav_product .product {
-    top: 18.5rem !important;
-  }
-  .main_nav > li.nav_duty .duty {
-    top: 25.5rem !important;
-  }
-  .main_nav > li.nav_news .news {
-    top: 33rem !important;
-  }
 }
 @media only screen and (max-height: 600px) {
   .main_nav > li {
