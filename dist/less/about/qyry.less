@@ -305,7 +305,7 @@
                             background-size: auto 100%;
                             margin-top: -41px;
                             cursor: pointer;
-                            z-index: 800;
+                            z-index: 80;
                             transition: opacity .5s;
                             -webkit-transition: opacity .5s;
                             background: url(../../images/about/qyry/button.png) 0 0 no-repeat;
@@ -334,6 +334,7 @@
                                     width: 96%;
                                     margin: 0 auto;
                                     >.img_wrap{
+                                        display: block;
                                         position: relative;
                                         max-width: none;
                                         width: 100%;
@@ -359,6 +360,94 @@
                         }
                     }
                 }
-        }
+                
+                .prize_cate_wrap{
+                    background-color: #8cc5e4;
+                    padding: 45px 180px 5px 40px;
+                    text-align: center;
+                    position: relative;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    >i{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    pointer-events: none;
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-top: 147px solid #b4d8e9;
+                    border-right: 147px solid #f8f7f3;
+                    }
+                    .scroller{
+                        position: relative;
+                        height: 100%;
+                        transition: transform .7s ease-in-out;
+                        -webkit-transition: -webkit-transform .7s ease-in-out;
+                        text-align: center;
+                        >.tab_item{
+                            font-size: 1.3em;
+                            color: #84c1e4;
+                            display: inline-block;
+                            margin-top: -25px;
+                            >.tab_item_content{
+                                transform: scale(.72);
+                                -webkit-transform: scale(.72);
+                                transition: all .3s;
+                                -webkit-transition: all .3s;
+                                width: 90px;
+                                height: 100px;
+                                position: relative;
+                                display: block;
+                                cursor: pointer;
+                                >.bg_1{
+                                    display: block;
+                                    transition: opacity .3s;
+                                    -webkit-transition: opacity .3s;
+                                    background-size: 144px;
+                                    position: absolute;
+                                    left: 9px;
+                                    right: 9px;
+                                    top: 0;
+                                    bottom: 0;
+                                    background: url(../../images/about/qyry/bg.png) 0 0 no-repeat;
+                                }
+                                >.bg_2{
+                                    display: block;
+                                    opacity: .8;
+                                    transition: opacity .3s;
+                                    -webkit-transition: opacity .3s;
+                                    background: url(../../images/about/qyry/bg.png) 0 0 no-repeat;
+                                    background-position: 100% 0;
+                                    background-size: 144px;
+                                    position: absolute;
+                                    left: 9px;
+                                    right: 9px;
+                                    top: 0;
+                                    bottom: 0;
+                                }
+                                >b{
+                                    display: block;
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    top: 44%;
+                                    font-weight: normal;
+                                    transition: transform .3s;
+                                    -webkit-transition: -webkit-transform .3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        
+    }
+}
+
+.normal{
+    .tab_item_content{
+        transform: scale(1) !important;
+        -webkit-transform: scale(1) !important;
     }
 }

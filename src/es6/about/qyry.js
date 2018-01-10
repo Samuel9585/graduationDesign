@@ -16,13 +16,19 @@ window.addEventListener("load", navBarchange, false);
 let openButton = document.getElementsByClassName('view_more')[0];
 let target = $('.block_view_more_1');
 let sign = true;
-openButton.addEventListener('click',function(){
+openButton.addEventListener('click', function () {
     target.toggleClass("showWord");
-    if(sign)
-    openButton.innerText = "收起";
+    if (sign)
+        openButton.innerText = "收起";
     else
-    openButton.innerText = "了解更多";
+        openButton.innerText = "了解更多";
     sign = !sign;
-},false);
+}, false);
 
-// 十七年文本位置
+// 水滴点击变大
+let changTarget = $(".tab_item");
+changTarget.click(function(){
+    changTarget.removeClass("normal");
+    $(this).addClass("normal");
+});
+

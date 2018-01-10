@@ -23,4 +23,9 @@ openButton.addEventListener('click', function () {
     sign = !sign;
 }, false);
 
-// 十七年文本位置
+// 水滴点击变大
+var changTarget = $(".tab_item");
+changTarget.click(function () {
+    changTarget.removeClass("normal");
+    $(this).addClass("normal");
+});
