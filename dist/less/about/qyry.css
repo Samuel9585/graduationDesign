@@ -277,6 +277,7 @@
   white-space: nowrap;
   overflow: hidden;
   position: relative;
+  display: none;
 }
 .block_view_more_3 .block_prize_list .block_content .prize_list_wrap > .scroller_wrap .scroller_mask {
   position: absolute;
@@ -433,7 +434,136 @@
   transition: transform .3s;
   -webkit-transition: -webkit-transform 0.3s;
 }
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  overflow: visible;
+  width: auto;
+}
+.footer .footer_inner {
+  display: block;
+  margin-left: 93px;
+  position: relative;
+  color: #b5b5b6;
+}
+.footer .footer_inner .social {
+  padding: 61px 0 32px;
+  font-size: .85em;
+  text-align: center;
+}
+.footer .footer_inner .social a {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  text-align: center;
+}
+.footer .footer_inner .social a:hover i {
+  background-position: 0 -54px;
+}
+.footer .footer_inner .social a i {
+  display: block;
+  margin: 0 auto .9375rem;
+  width: 3.375rem;
+  height: 3.375rem;
+  background: url(../../images/social.png) 0 0 no-repeat;
+  background-size: 108px;
+}
+.footer .footer_inner .social > span {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+.footer .footer_inner .social > span:hover i {
+  background-position: -54px -54px;
+}
+.footer .footer_inner .social > span:hover .weixin_wrap {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+.footer .footer_inner .social > span i {
+  display: block;
+  margin: 0 auto .9375rem;
+  width: 3.375rem;
+  height: 3.375rem;
+  background: url(../../images/social.png) -54px 0 no-repeat;
+  background-size: 108px;
+}
+.footer .footer_inner .social > span .weixin_wrap {
+  display: block;
+  position: absolute;
+  right: -150px;
+  top: -40px;
+  background-color: #fff;
+  border-radius: .3125rem;
+  color: #00a63c;
+  padding: .3125rem;
+  text-align: center;
+  z-index: 100;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+}
+.footer .footer_inner .social > span .weixin_wrap > em {
+  display: block;
+  position: absolute;
+  left: -19px;
+  top: 50%;
+  border: .625rem solid transparent;
+  border-right-color: #fff;
+  margin-top: -1.25rem;
+}
+.footer .footer_inner .social > span .weixin_wrap .weixin {
+  display: block;
+  height: 7.5rem;
+  width: 7.5rem;
+  background: url(../../images/weixin.png) 0 0 no-repeat;
+  margin-bottom: .1875rem;
+}
+.footer .footer_inner .copyright {
+  padding: 0 2em 5.375rem;
+  line-height: 1.8;
+  text-align: center;
+  font-size: .85em;
+}
+.footer .footer_inner .copyright .line {
+  display: inline-block;
+}
+.footer .footer_inner .copyright .line a:hover {
+  color: #fff;
+}
+.footer .footer_inner .copyright .beian {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url(../../images/beian.png) 0 0 no-repeat;
+  background-size: 100%;
+  margin-right: .3125rem;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+.footerWrap {
+  width: auto;
+  max-width: none;
+  background: url(../../images/about/footerBg.jpg) 50% 50% no-repeat;
+  background-color: #ffffff;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  color: #b5b5b6;
+  overflow: visible;
+}
 .normal .tab_item_content {
   transform: scale(1) !important;
   -webkit-transform: scale(1) !important;
+}
+.slider_handle {
+  display: none;
 }

@@ -1,0 +1,217 @@
+.page_wrap{
+	position: relative;
+	height: 100%;
+	.banner_item{
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-image: url(../../images/product/brand/pc_bg.png);
+		background-position: 50% 50%;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+.content_area{
+	display: block;
+	margin-left: 93px;
+	margin-top: -8.6%;
+	position: relative;
+	font-size: .85em;
+	color: #333;
+	.product_block{
+		float: left;
+		width: 14.28%;
+		.block_bg{
+			cursor: default;
+			background-color: rgba(128,188,67,.9);
+			margin: 0 2px 2px 0;
+		    height: 0;
+		    padding-top: 65%;
+		    position: relative;
+		    display: block;
+		    >i{
+		    	display: block;
+			    position: absolute;
+			    left: 10%;
+			    right: 10%;
+			    top: 0;
+			    bottom: 0;
+			    height: 100%;
+			    em{
+			    	max-width: 134px;
+				    margin: 0 auto;
+				    display: block;
+				    position: relative;
+				    height: 100%;
+				    b{
+						background: none 50% 50% no-repeat;
+					    background-size: 100%;
+					    display: block;
+					    left: 0;
+					    right: 0;
+					    top: 0;
+					    bottom: 0;
+					    position: absolute;
+				    }
+			    }
+		    }
+		}
+	}
+}
+
+.blue{
+	background-color: rgba(113,185,224,.9) !important; 
+}
+
+.red{
+	background-color: rgba(231,107,100,.9) !important;
+}
+.orange{
+	background-color: rgba(239,154,56,.9) !important;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    overflow: visible;
+    width: auto;
+    .footer_inner{
+        display: block;
+        margin-left: 93px;
+        position: relative;
+        color: #b5b5b6;
+        .social{
+            padding: 61px 0 32px;
+            font-size:.85em;
+            text-align: center;
+            a{
+                &:hover{
+                    i{
+                        background-position: 0 -54px;
+                    }
+                }
+                display: inline-block;
+                position: relative;
+                margin-right: 20px;
+                text-align: center;
+                i{
+                    display: block;
+                    margin: 0 auto .9375rem;
+                    width: 3.375rem;
+                    height: 3.375rem;
+                    background:url(../../images/social.png) 0 0 no-repeat;
+                    background-size: 108px;
+                }
+            }
+            >span{
+                position: relative;
+                display: inline-block;
+                text-align: center;
+                cursor: pointer;
+                &:hover{
+                    i{
+                        background-position: -54px -54px;
+                    }
+                    .weixin_wrap{
+                        transform: scale(1);
+                        -webkit-transform: scale(1);
+                    }
+                }
+                i{
+                    display: block;
+                    margin: 0 auto .9375rem;
+                    width: 3.375rem;
+                    height: 3.375rem;
+                    background:url(../../images/social.png) -54px 0 no-repeat;
+                    background-size: 108px;
+                }
+                .weixin_wrap{
+                    display: block;
+                    position: absolute;
+                    right: -150px;
+                    top: -40px;
+                    background-color:#fff;
+                    border-radius: .3125rem;
+                    color: #00a63c;
+                    padding: .3125rem;
+                    text-align: center;
+                    z-index: 100;
+                    transition: all .2s;
+                    -webkit-transition: all .2s;
+                    transform: scale(0);
+                    -webkit-transform: scale(0);
+                    -webkit-transform-origin: 0 50%;
+                    transform-origin: 0 50%;
+                    >em{
+                        display: block;
+                        position: absolute;
+                        left: -19px;
+                        top: 50%;
+                        border: .625rem solid transparent;
+                        border-right-color:#fff;
+                        margin-top: -1.25rem;
+                    }
+                    .weixin{
+                        display: block;
+                        height: 7.5rem;
+                        width: 7.5rem;
+                        background: url(../../images/weixin.png) 0 0 no-repeat;
+                        margin-bottom: .1875rem;
+                    }
+                }
+            }
+        }
+        .copyright{
+            padding: 0 2em 5.375rem;
+            line-height: 1.8;
+            text-align: center;
+            font-size: .85em;
+            .line{
+                display: inline-block;
+                a{
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+            .beian{
+                display: inline-block;
+                width: 1.25rem;
+                height: 1.25rem;
+                background: url(../../images/beian.png) 0 0 no-repeat;
+                background-size: 100%;
+                margin-right: .3125rem;
+                vertical-align: middle;
+                position: relative;
+                top: -2px;
+                
+            }
+        }
+
+    }
+}
+.footerWrap{
+    width: auto;
+    max-width: none;
+    background:url(../../images/about/footerBg.jpg) 50% 50% no-repeat;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    color: #b5b5b6;
+    overflow: visible;
+
+}
+
+.clearFix::after{
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+}

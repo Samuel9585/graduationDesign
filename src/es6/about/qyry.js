@@ -9,6 +9,9 @@ function navBarchange(event) {
     home.classList.remove("active");
     onPage.classList.add("active_about");
     logo_bg.style.backgroundColor = "#f39e38";
+
+    // 页面额外任务
+    $(".scroller_0").show();
 }
 window.addEventListener("load", navBarchange, false);
 
@@ -27,8 +30,37 @@ openButton.addEventListener('click', function () {
 
 // 水滴点击变大
 let changTarget = $(".tab_item");
+let data_title = $(".data_title");
 changTarget.click(function(){
     changTarget.removeClass("normal");
     $(this).addClass("normal");
+
+    let changed_year = $(this).find("b")[0].innerText;
+    data_title[0].innerText = changed_year;
+
+    let showClass = null;
+    switch (changed_year){
+        case "2016":
+        showClass = ".scroller_0";
+        break;
+        case "2015":
+        showClass = ".scroller_1";
+        break;
+        case "2014":
+        showClass = ".scroller_2";
+        break;
+        case "2013":
+        showClass = ".scroller_3";
+        break;
+        case "2012":
+        showClass = ".scroller_4";
+        break;
+        default:
+        showClass = ".scroller_0";
+    }
+
+    $(".scroller_wrap").hide();
+    $(showClass).show();
+    console.log($(showClass)[0]);
 });
 
